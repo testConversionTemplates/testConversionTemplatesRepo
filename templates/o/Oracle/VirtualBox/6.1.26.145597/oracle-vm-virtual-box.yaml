@@ -7,7 +7,7 @@ PublisherName: Oracle Corporation
 
 EligibleForConversion: No - Driver Required
 
-ConversionStatus: Not Eligible
+ConversionStatus: Eligible
 
 RemediationApproach:
   - SequenceNumber: 1
