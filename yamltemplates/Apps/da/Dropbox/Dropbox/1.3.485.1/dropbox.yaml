@@ -1,0 +1,30 @@
+# MSIX Conversion Template
+PackageName: Dropbox
+
+PackageVersion: 1.3.485.1
+
+PublisherName: Dropbox, Inc.
+
+EligibleForConversion: Yes
+
+ConversionStatus: Failed
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Drop Box Launcher points to wrong location of launcher
+
+AdditionalComments:
+  - Customer Fix Needed .
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

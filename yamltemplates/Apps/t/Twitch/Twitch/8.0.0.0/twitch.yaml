@@ -1,0 +1,27 @@
+# MSIX Conversion Template
+PackageName: Twitch
+
+PackageVersion: 8.0.0.0
+
+PublisherName: Twitch Interactive, Inc.
+
+EligibleForConversion: Yes
+
+ConversionStatus: Failed
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: There are 6 create file errors that are not fixable by PSF.
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

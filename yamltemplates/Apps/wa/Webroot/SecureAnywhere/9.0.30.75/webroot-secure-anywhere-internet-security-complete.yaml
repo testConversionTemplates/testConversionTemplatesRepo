@@ -1,0 +1,42 @@
+# MSIX Conversion Template
+PackageName: Webroot secure anywhere Internet Security Complete
+
+PackageVersion: 9.0.30.75
+
+PublisherName: Webroot
+
+EligibleForConversion: No - Driver Required
+
+ConversionStatus: Not Eligible
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: App launches via a shortcut
+      Reference:
+    Fix:
+      FixType: PSF
+      FixDetails:
+        PSFConfig:
+          applications:
+            - id: WRSA
+              executable: VFS\ProgramFilesX64\Webroot\WRSA.exe
+              arguments: '-showgui'
+              workingDirectory: VFS\ProgramFilesX64\Webroot\
+      Reference: https://docs.microsoft.com/en-us/windows/msix/psf/psf-launch-apps-with-parameters
+  
+  - SequenceNumber: 2
+    Issue:
+      Description: App is not uninstalling, uninstall does not work
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

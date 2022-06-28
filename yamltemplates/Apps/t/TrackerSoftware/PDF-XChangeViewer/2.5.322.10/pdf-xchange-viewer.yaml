@@ -1,0 +1,25 @@
+# MSIX Conversion Template
+PackageName: PDF-Xchange Viewer
+
+PackageVersion: 2.5.322.10
+
+PublisherName: Tracker Software Products Ltd
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - No Fix Required
+
+AdditionalComments:
+  - Custom configuration asked while installation during conversion
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 21H1
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

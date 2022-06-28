@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: Adobe Photoshop CC
+
+PackageVersion: 22.4.2
+
+PublisherName: Adobe Systems Incorporated
+
+EligibleForConversion: No - Driver Required
+
+ConversionStatus: Not Eligible 
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2020.1219.0
+
+TemplateVersion: 1.0.0

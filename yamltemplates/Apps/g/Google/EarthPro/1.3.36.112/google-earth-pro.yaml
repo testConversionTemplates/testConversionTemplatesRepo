@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: Google Earth Pro
+
+PackageVersion: 1.3.36.112
+
+PublisherName: Google LLC
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - No Fix Required
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 22524.1000
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.1230.0
+
+TemplateVersion: 1.0.0
