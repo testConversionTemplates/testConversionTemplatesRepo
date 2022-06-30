@@ -18,8 +18,18 @@ RemediationApproach:
       Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information
       FixDetails:
         Path: C:/Users/User/AppData/Local
-  
+        
   - SequenceNumber: 2
+    Issue:
+      Description: App not launching properly
+    Fix:
+      FixType: Capability
+      FixDetails:
+        Capabilities:
+          - AllowElevation
+      Reference: https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#:~:text=or%20Visual%20Studio.-,Elevation,-The%20allowElevation%20restricted
+  
+  - SequenceNumber: 3
     Issue:
       Description: There were create file errors in process monitor
     Fix:
