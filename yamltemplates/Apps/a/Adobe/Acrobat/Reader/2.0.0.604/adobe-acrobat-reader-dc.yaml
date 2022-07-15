@@ -1,7 +1,7 @@
 # MSIX Conversion Template
 PackageName: Adobe Acrobat Reader DC
 
-PackageVersion: 2.0.0.604
+PackageVersion: 1.0
 
 PublisherName: Adobe Inc
 
