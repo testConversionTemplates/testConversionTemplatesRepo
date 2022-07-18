@@ -55,6 +55,29 @@ RemediationApproach:
                           patterns:
                             - .*
 
+  - SequenceNumber: 4
+    Issue:
+      Description: Test Issue
+    Fix:
+      FixType: InstalledLocationVirtualization
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
+      FixDetails:
+        ModifiedItems: keep
+        DeletedItems: reset
+
+
+
+  - SequenceNumber: 5
+    Issue:
+      Description: DLL not found
+    Fix:
+      FixType: LoaderSearchPathOverride
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-loadersearchpathoverride
+      FixDetails:
+        FolderPath:
+          - VFS\ProgramFilesX64\GIMP 2\lib
+          - VFS\ProgramFilesX64\GIMP 2\bin
+
 MinimumPSFVersion: 1.0.200410.1
 
 Edition: Windows 10 Enterprise Evaluation
