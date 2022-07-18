@@ -1,0 +1,45 @@
+# MSIX Conversion Template
+PackageName: LINE
+
+PackageVersion: 7.0.3.2555
+
+PublisherName: LINE Corporation
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - Fix Required
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Test Issue
+    Fix:
+      FixType: InstalledLocationVirtualization
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
+      FixDetails:
+        ModifiedItems: keep
+        DeletedItems: reset
+  - SequenceNumber: 2
+    Issue:
+      Description: DLL not found
+    Fix:
+      FixType: LoaderSearchPathOverride
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-loadersearchpathoverride
+      FixDetails:
+        FolderPath:
+          - VFS\ProgramFilesX64\GIMP 2\lib
+          - VFS\ProgramFilesX64\GIMP 2\bin
+
+MinimumPSFVersion: 1.0.200410.1
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0
