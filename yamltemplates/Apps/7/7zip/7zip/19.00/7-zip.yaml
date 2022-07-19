@@ -1,7 +1,7 @@
 # MSIX Conversion Template
 PackageName: 7-Zip
 
-PackageVersion: 19.1.4.0
+PackageVersion: 19.1.6.0
 
 PublisherName: Igor Pavlov
 
