@@ -1,9 +1,9 @@
 # MSIX Conversion Template
-PackageName: AVG Secure Browser
+PackageName: USB Disk Security
 
-PackageVersion: 6.13.0.3899
+PackageVersion: 6.9.0.0
 
-PublisherName: AVG Technologies
+PublisherName: Zbshareware Lab
 
 EligibleForConversion: Yes
 
@@ -13,7 +13,7 @@ Edition: Windows 10 Enterprise Evaluation
 
 MinimumOSVersion: 20H2
 
-MinimumOSBuild: 19042.1237
+MinimumOSBuild: 19043.1237
 
 Architecture: 64
 

@@ -1,9 +1,9 @@
 # MSIX Conversion Template
-PackageName: AVG PC TuneUp
+PackageName: Zoom
 
-PackageVersion: 20.7.2223.0
+PackageVersion: 5.7.0.0
 
-PublisherName: AVG Technologies
+PublisherName: Zoom
 
 EligibleForConversion: Yes
 
@@ -12,12 +12,13 @@ ConversionStatus: Successful - Fix Required
 RemediationApproach:
   - SequenceNumber: 1
     Issue:
-      Description: MSIX Packaging Tool failed to convert to MSIX stating a service is running outside the package.
+      Description: On launch it ran different end point
     Fix:
-      FixType: Services
+      FixType: EntryPoint
       FixDetails:
-        Exclude:
-          - CleanupPSvc
+        EntryPointIssue: WrongEntryPoint
+        ApplicationIds:
+          - 
 
 Edition: Windows 10 Enterprise Evaluation
 
