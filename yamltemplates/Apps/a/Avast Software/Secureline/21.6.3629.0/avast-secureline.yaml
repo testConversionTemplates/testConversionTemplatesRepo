@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: Avast Secureline
+
+PackageVersion: 21.6.3629.0
+
+PublisherName: Avast Software
+
+EligibleForConversion: No - Driver Required
+
+ConversionStatus: Not Eligible
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

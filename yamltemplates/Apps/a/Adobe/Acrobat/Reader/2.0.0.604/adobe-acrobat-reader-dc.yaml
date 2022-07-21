@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: Adobe Acrobat Rea
+
+PackageVersion: 1.0
+
+PublisherName: Adobe Inc
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - No Fix Required
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2020.1219.0
+
+TemplateVersion: 1.0.0

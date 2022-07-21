@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: Amazon KD
+
+PackageVersion: 1.33.0.62002
+
+PublisherName: Amazon.com
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - No Fix Required
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 21H1
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0
