@@ -16,7 +16,10 @@ RemediationApproach:
       FixType: InstalledLocationVirtualization
       Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
       FixDetails:
-        UpdateActionsAttributes:{}
+        UpdateActionsAttributes:
+          ModifiedItems: keep
+          DeletedItems: reset
+          AddedItems: keep
 
   - SequenceNumber: 2
     Issue:
