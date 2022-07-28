@@ -18,6 +18,7 @@ RemediationApproach:
       FixDetails:
         Capabilities:
           - uiAccess
+          - allowElevation
 
   - SequenceNumber: 2
     Issue:
