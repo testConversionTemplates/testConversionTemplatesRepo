@@ -11,49 +11,6 @@ ConversionStatus: Successful - Fix Required
 RemediationApproach:
   - SequenceNumber: 1
     Issue:
-      Description: Test Issue
-    Fix:
-      FixType: Capability
-      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
-      FixDetails:
-        Capabilities:
-          - uiAccess
-          - allowElevation
-
-  - SequenceNumber: 2
-    Issue:
-      Description: Test Issue
-    Fix:
-      FixType: InstalledLocationVirtualization
-      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
-      FixDetails:
-        UpdateActionsAttributes:
-          ModifiedItems: keep
-          DeletedItems: reset
-          AddedItems: keep
-
-  - SequenceNumber: 3
-    Issue:
-      Description: DLL not found 
-    Fix:
-      FixType: LoaderSearchPathOverride
-      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-loadersearchpathoverride
-      FixDetails:
-        FolderPaths: 
-          - VFS\ProgramFilesX64\GIMP 2\lib
-          - VFS\ProgramFilesX64\GIMP 2\bin
-          
-  - SequenceNumber: 4
-    Issue:
-      Description: Required permissions were not granted to the VFS folder and launcher.exe was not available during msix launch
-    Fix:
-      FixType: InstallationPath
-      Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information
-      FixDetails:
-        Path: C:/Users/User/AppData/Local
-  
-  - SequenceNumber: 5
-    Issue:
       Description: There were create file errors in process monitor
     Fix:
       FixType: PSF
@@ -77,7 +34,48 @@ RemediationApproach:
                         - base: LINE/bin/
                           patterns:
                             - .*
+  - SequenceNumber: 2
+    Issue:
+      Description: Test Issue
+    Fix:
+      FixType: Capability
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
+      FixDetails:
+        Capabilities:
+          - allowElevation
 
+  - SequenceNumber: 3
+    Issue:
+      Description: Test Issue
+    Fix:
+      FixType: InstalledLocationVirtualization
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
+      FixDetails:
+        UpdateActionsAttributes:
+          ModifiedItems: keep
+          DeletedItems: reset
+          AddedItems: keep
+
+  - SequenceNumber: 4
+    Issue:
+      Description: DLL not found 
+    Fix:
+      FixType: LoaderSearchPathOverride
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-loadersearchpathoverride
+      FixDetails:
+        FolderPaths: 
+          - VFS\ProgramFilesX64\GIMP 2\lib
+          - VFS\ProgramFilesX64\GIMP 2\bin
+          
+  - SequenceNumber: 5
+    Issue:
+      Description: Required permissions were not granted to the VFS folder and launcher.exe was not available during msix launch
+    Fix:
+      FixType: InstallationPath
+      Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information
+      FixDetails:
+        Path: C:/Users/User/AppData/Local
+        
 MinimumPSFVersion: 1.0.200410.1
 
 Edition: Windows 10 Enterprise Evaluation
