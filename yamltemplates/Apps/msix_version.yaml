@@ -43,6 +43,7 @@ RemediationApproach:
       FixDetails:
         Capabilities:
           - allowElevation
+          - uiAccess
 
   - SequenceNumber: 3
     Issue:
