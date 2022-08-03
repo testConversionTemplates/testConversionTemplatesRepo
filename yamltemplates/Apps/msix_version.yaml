@@ -65,8 +65,8 @@ RemediationApproach:
       Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-loadersearchpathoverride
       FixDetails:
         FolderPaths: 
-          - VFS\ProgramFilesX64\GIMP 2\lib
-          - VFS\ProgramFilesX64\GIMP 2\bin
+          - VFS\ProgramFilesX64\LINE\lib
+          - VFS\ProgramFilesX64\LINE\bin
           
   - SequenceNumber: 5
     Issue:
