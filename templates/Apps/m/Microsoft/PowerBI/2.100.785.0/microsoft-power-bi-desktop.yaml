@@ -1,0 +1,30 @@
+# MSIX Conversion Template
+PackageName: Microsoft Power BI Desktop
+
+PackageVersion: 2.100.785.0
+
+PublisherName: Microsoft Corporation
+
+EligibleForConversion: Yes
+
+ConversionStatus: Failed
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Registry Errors
+
+AdditionalComments:
+  - Tried RegLegacyFixup didn't work. 
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.1105.0
+
+TemplateVersion: 1.0.0

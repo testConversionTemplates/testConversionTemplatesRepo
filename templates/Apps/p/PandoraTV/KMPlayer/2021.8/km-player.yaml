@@ -1,0 +1,28 @@
+# MSIX Conversion Template
+PackageName: KM Player
+
+PackageVersion: 2021.8
+
+PublisherName:
+
+EligibleForConversion: Yes
+
+ConversionStatus: Converted With Issues
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Registry not accessible 
+      Reference: https://microsoft.visualstudio.com/DefaultCollection/OS/_workitems/edit/36173692
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

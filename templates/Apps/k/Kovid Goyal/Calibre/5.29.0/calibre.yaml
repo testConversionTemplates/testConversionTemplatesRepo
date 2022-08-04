@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: Calibre
+
+PackageVersion: 5.29.0
+
+PublisherName: Kovid Goyal
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - No Fix Required
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.1266
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

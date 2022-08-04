@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: VMWare Workstation Pro
+
+PackageVersion: 16.1.2.8432
+
+PublisherName: VMware, Inc.
+
+EligibleForConversion: No - Driver Required 
+
+ConversionStatus: Not Eligible
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 21H1
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

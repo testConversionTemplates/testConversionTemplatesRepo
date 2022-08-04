@@ -1,0 +1,40 @@
+# MSIX Conversion Template
+PackageName: Quick Heal Total Security
+
+PackageVersion: 13.1.0.1
+
+PublisherName: Quick Heal Technologies Ltd.
+
+EligibleForConversion: Yes
+
+ConversionStatus: Converted With Issues
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: PC Tuner showed createFile error in its Working Directory.
+    Fix:
+      FixType: Extension
+      FixDetails:
+        Extensions:
+          - installedLocationVirtualization
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
+
+AdditionalComments:
+  - Quick Heal Total Security installs the following apps
+  - Quick Heal Total Security works fine. Scans without activating free trail.
+  - Quick Heal Safe Banking shows popup to restart. Doesnt work after restart. No logs in ProcMon
+  - Quick Heal Secure Browse shows popup to restart. Doesnt work after restart. No logs in ProcMon
+  - PC Tuner fixed with installedLocationVirtualization
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.1266
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

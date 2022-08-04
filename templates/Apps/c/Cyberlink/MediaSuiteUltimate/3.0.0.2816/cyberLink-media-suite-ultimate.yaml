@@ -1,0 +1,54 @@
+# MSIX Conversion Template
+PackageName: CyberLink Media Suite Ultimate
+
+PackageVersion: 3.0.0.2816
+
+PublisherName: CyberLink
+
+EligibleForConversion: Yes
+
+ConversionStatus: Converted With Issues
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Some exes does not launch
+
+AdditionalComments:
+    - Installs 17 apps.
+    - | 
+      Present in MSIX and Working Fine:
+        - CyberLink Desktop Burning Gadget 11
+        - CyberLink ISO Viewer 11 
+        - CyberLink LabelPrint 2.5 
+        - CyberLink MediaEspresso 7.5 Gadget 
+        - CyberLink PhotoDirector 9 (64 bit) 
+        - CyberLink Power2Go 11 -> No burner available popup 
+        - CyberLink PowerBackup2 
+        - CyberLink PowerDirector 16 (64 bit)
+    - |
+      Present in MSIX and doesnt launch:
+        - CyberLink Media Suite 16 -> doesnt launch. Registry Error.
+        - CyberLink MediaShow 6 
+        - CyberLink PerfectCam 
+        - CyberLink PowerDVD 18 
+        - CyberLink PowerProducer 6 
+        - CyberLink Screen Recorder 3  - another user running the program
+        - CyberLink Virtual Drive 11 
+        - CyberLink WaveEditor 2 
+        - CyberLink YouCam 7 Mirror -> No webcam popup. works fine.
+    - |
+      Present in Exe and Not present in MSIX:
+        - CyberLink MediaEspresso 7.5
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.1266
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

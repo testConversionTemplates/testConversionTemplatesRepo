@@ -1,0 +1,30 @@
+# MSIX Conversion Template
+PackageName: TeraCopy
+
+PackageVersion: 3.8.5
+
+PublisherName: Code Sector
+
+EligibleForConversion: Yes
+
+ConversionStatus: Failed
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Internal Error
+
+AdditionalComments:
+  - No logs could be found in event viewer or process monitor
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 21H1
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

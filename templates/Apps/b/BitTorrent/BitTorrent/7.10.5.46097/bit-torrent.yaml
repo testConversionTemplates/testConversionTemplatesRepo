@@ -1,0 +1,48 @@
+# MSIX Conversion Template
+PackageName: Bittorrent
+
+PackageVersion: 7.10.5.46097
+
+PublisherName: BitTorrent Inc. 
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - Fix Required
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: File Access denied
+    Fix:
+      FixType: PSF
+      FixDetails:
+        PSFConfig:
+          applications:
+            - id: BITTORRENT
+              executable: VFS\AppData\BitTorrent\BitTorrent.exe
+              workingDirectory: VFS\AppData\BitTorrent\
+          processes:
+            - executable: BitTorrent
+              fixups:
+                - dll: FileRedirectionFixup.dll
+                  config:
+                    redirectedPaths:
+                      packageRelative:
+                        - base: VFS/AppData/BitTorrent/
+                          patterns:
+                            - .* 
+      Reference: https://github.com/Microsoft/MSIX-PackageSupportFramework/tree/master/fixups/FileRedirectionFixup
+
+MinimumPSFVersion: 1.0.200410.1
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0
