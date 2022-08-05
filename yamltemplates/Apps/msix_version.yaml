@@ -47,7 +47,7 @@ RemediationApproach:
 
   - SequenceNumber: 3
     Issue:
-      Description: Test Issue
+      Description: Test Issue 2
     Fix:
       FixType: InstalledLocationVirtualization
       Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
