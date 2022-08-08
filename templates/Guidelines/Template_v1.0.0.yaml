@@ -1,0 +1,185 @@
+# MSIX Conversion Template
+PackageName: 
+
+PackageVersion: 
+
+PublisherName: 
+
+#---------------------------------------------
+#| Accepted Values For EligibleForConversion |
+#---------------------------------------------
+#| Yes                                       |
+#| No - Driver Required                      |
+#| No - Prohibited Application               |
+#| Can't Determine                           |
+#---------------------------------------------
+EligibleForConversion: 
+
+#-----------------------------------------
+#| Accepted Values For Conversion Status |
+#-----------------------------------------
+#| Successful - No Fix Required          |
+#| Successful - Fix Required             |
+#| Converted With Issues                 |
+#| Failed                                |
+#| Not Eligible                          |
+#-----------------------------------------
+ConversionStatus: 
+
+RemediationApproach:
+  - SequenceNumber: #1
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #InstallationPath
+      Reference: #link
+      FixDetails:
+        Path: #C:/Users/User/AppData/Local
+
+  - SequenceNumber: #2
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #Capability
+      Reference: #link
+      FixDetails:
+        Capabilities:
+          - #Run as Administrator
+
+  - SequenceNumber: #3
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #Dependency
+      Reference: #link
+      FixDetails:
+        Dependencies:
+          - #C++ 2008 Redistributable x86
+
+  - SequenceNumber: #4
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #Extension
+      Reference: #link
+      FixDetails:
+        Extensions:
+          - #installedLocationVirtualization
+
+  - SequenceNumber: #4
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #Custom
+      Reference: #link
+      FixDetails:
+        Solution:
+          -
+
+  - SequenceNumber: #5
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #Services
+      Reference: #link
+      FixDetails:
+        Exclude:
+          - #CleanupPSvc
+        Include:
+          - 
+
+  - SequenceNumber: #6
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #EntryPoint
+      Reference: #link
+      FixDetails:
+        EntryPointIssue: #WrongEntryPoint
+        ApplicationIds:
+          - 
+
+  - SequenceNumber: #7
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #EntryPoint
+      Reference: #link
+      FixDetails:
+        EntryPointIssue: #ShortcutNotCaptured
+        Solution:
+          - 
+
+  - SequenceNumber: #8
+    Issue:
+      Description: #text
+      Reference: #link
+    Fix:
+      FixType: #PSF
+      Reference: #link
+      FixDetails:
+        applications:
+          - id:
+            executable:
+            workingDirectory:
+        processes:
+          - executable:
+            fixups:
+              - dll: #FileRedirectionFixup.dll
+                config:
+                  redirectedPaths:
+                    packageRelative:
+                      - base:
+                        patterns:
+                          -
+                        redirectTargetBase:
+                        isExclusion:
+                        isReadOnly:
+                    packageDriveRelative:
+                      - base:
+                        patterns:
+                          -
+                        redirectTargetBase:
+                        isExclusion:
+                        isReadOnly:
+                    knownFolders:
+                      - id:
+                        relativePaths:
+                          - base:
+                            patterns:
+                              -
+                            redirectTargetBase:
+                            isExclusion:
+                            isReadOnly:
+
+MinimumPSFVersion: #1.0.200410.1
+
+AdditionalComments:
+  - # add extra points here (Optional)
+  - # add extra points here (Optional)
+
+Edition: # Windows 10 Enterprise
+
+MinimumOSVersion: # 21H1
+
+MinimumOSBuild: # 19043.1165
+
+#------------------------------------
+#| Accepted Values For Architecture |
+#------------------------------------
+#| 64                               |
+#| 32                               |
+#------------------------------------
+Architecture: 
+
+MSIXConversionToolVersion: #1.2021.709.0
+
+TemplateVersion: 1.0.0
