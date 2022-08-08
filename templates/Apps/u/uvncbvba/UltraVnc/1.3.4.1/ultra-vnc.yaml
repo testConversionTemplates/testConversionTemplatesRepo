@@ -1,0 +1,35 @@
+# MSIX Conversion Template
+PackageName: Ultra VNC
+
+PackageVersion: 1.3.4.1
+
+PublisherName: uvnc bvba
+
+EligibleForConversion: Yes
+
+ConversionStatus: Converted With Issues
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Various Install options not captured
+    Fix:
+      FixType: Custom
+      FixDetails:
+        Solution:
+          - Identify the option you would like to install and select the same while conversion 
+
+AdditionalComments:
+  - User Options are not captured in MSIX , User needs to select the options he needs while installation of EXE.
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 21H1
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

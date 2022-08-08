@@ -1,0 +1,25 @@
+# MSIX Conversion Template
+PackageName: Check Point Remote Access Client
+
+PackageVersion: 3.8.1128.0
+
+PublisherName:
+
+EligibleForConversion: No - Driver Required
+
+ConversionStatus: Not Eligible
+
+AdditionalComments:
+  - Custom configuration asked while installation during conversion.
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 21H1
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

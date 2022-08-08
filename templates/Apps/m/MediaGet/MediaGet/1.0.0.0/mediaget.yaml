@@ -1,0 +1,35 @@
+# MSIX Conversion Template
+PackageName: MediaGet
+
+PackageVersion: 1.0.0.0
+
+PublisherName:
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - Fix Required
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: App does not work properly on launch
+    Fix:
+      FixType: InstallationPath 
+      FixDetails:
+        Path: C:\Users\User\
+      Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information
+
+AdditionalComments:
+  - Ensure the installation Location is pointed to the right directory as specified in Install Location field in the reference page.
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

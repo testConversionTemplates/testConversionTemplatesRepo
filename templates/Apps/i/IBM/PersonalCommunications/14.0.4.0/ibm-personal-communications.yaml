@@ -1,0 +1,36 @@
+# MSIX Conversion Template
+PackageName: IBM Personal Communications
+
+PackageVersion: 14.0.4.0
+
+PublisherName: IBM
+
+EligibleForConversion: Yes
+
+ConversionStatus: Successful - Fix Required
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: DLL not found
+    Fix:
+      FixType: Extension
+      FixDetails:
+        Extensions:
+          - SearchPathOverride
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-loadersearchpathoverride
+
+AdditionalComments:
+  - Launch failed because java vm not found error pop-up on launch
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2020.1219.0
+
+TemplateVersion: 1.0.0

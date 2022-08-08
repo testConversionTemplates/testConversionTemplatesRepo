@@ -1,0 +1,30 @@
+# MSIX Conversion Template
+PackageName: Driver Booster
+
+PackageVersion: 9.0.1.104
+
+PublisherName: IObit
+
+EligibleForConversion: Yes
+
+ConversionStatus: Failed
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: App installer failed during MSIX conversion.
+
+AdditionalComments:
+  - The bug has been raised in the backlog https://microsoft.visualstudio.com/OS/_workitems/edit/37007660/
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.685
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0
