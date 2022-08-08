@@ -1,0 +1,22 @@
+# MSIX Conversion Template
+PackageName: LogMeIn Hamachi
+
+PackageVersion: 3.5.2519.0
+
+PublisherName: LogMeIn, Inc.
+
+EligibleForConversion: No - Driver Required
+
+ConversionStatus: Not Eligible
+
+Edition: Windows 10 Enterprise
+
+MinimumOSVersion: 21H1
+
+MinimumOSBuild: 19043.1237
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0

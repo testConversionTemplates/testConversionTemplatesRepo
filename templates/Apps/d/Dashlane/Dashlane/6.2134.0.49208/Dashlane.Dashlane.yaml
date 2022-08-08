@@ -1,0 +1,30 @@
+# MSIX Conversion Template
+PackageName: Dashlane
+
+PackageVersion: 6.2134.0.49208
+
+PublisherName: Dashlane Inc.
+
+EligibleForConversion: Yes
+
+ConversionStatus: Failed
+
+RemediationApproach:
+  - SequenceNumber: 1
+    Issue:
+      Description: Registry issues in Procmon
+
+AdditionalComments:
+  - Tried RegLegacyFixup didn't work. 
+
+Edition: Windows 10 Enterprise Evaluation
+
+MinimumOSVersion: 20H2
+
+MinimumOSBuild: 19042.1266
+
+Architecture: 64
+
+MSIXConversionToolVersion: 1.2021.709.0
+
+TemplateVersion: 1.0.0
