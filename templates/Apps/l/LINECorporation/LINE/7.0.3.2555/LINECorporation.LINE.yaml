@@ -1,0 +1,38 @@
+# MSIX Conversion Accelerator
+# For updating refer to https://github.com/microsoft/MSIX-ConversionTemplates/blob/main/AUTHORING_TEMPLATES.md
+PackageName: LINE
+PublisherName: LINE Corporation
+PackageVersion: 7.0.3.2555
+EligibleForConversion: Yes
+ConversionStatus: Successful - Fix Required
+RemediationApproach:
+- SequenceNumber: 1
+  Issue:
+    Description: PSF Fixup
+  Fix:
+    FixType: PSF
+    FixDetails:
+      PSFConfig:
+        Applications:
+        - Id: LINELAUNCHER
+          Executable: LINE/bin/LineLauncher.exe
+          WorkingDirectory: LINE/bin/
+        Processes:
+        - Executable: LineLauncher
+          Fixups:
+          - Dll: FileRedirectionFixup.dll
+            Config:
+              RedirectedPaths:
+                PackageRelative:
+                - Base: LINE/Data/
+                  Patterns:
+                  - .*\.tst
+                - Base: LINE/bin/
+                  Patterns:
+                  - .*
+Edition: Windows 10 Enterprise Evaluation
+MinimumOSVersion: 21H2
+MinimumOSBuild: 19044.1288
+Architecture: 64
+MSIXConversionToolVersion: 1.2022.828.0
+TemplateVersion: 1.0.0
