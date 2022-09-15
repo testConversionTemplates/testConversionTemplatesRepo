@@ -14,7 +14,7 @@ RemediationApproach:
     Issue:
       Description: The attribute 'Executable' with value 'vfs\programfilesx86\logmein\x64\logmeinsystray.dll' failed to parse.
 
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 
 MinimumOSVersion: 20H2
 
