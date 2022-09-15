@@ -28,7 +28,7 @@ RemediationApproach:
         Solution:
           - Click on Browse. Add all entry points. Launch only chrome.exe
 
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 
 MinimumOSVersion: 20H2
 
