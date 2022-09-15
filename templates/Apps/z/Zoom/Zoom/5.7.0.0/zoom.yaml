@@ -20,7 +20,7 @@ RemediationApproach:
         ApplicationIds:
           - 
 
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 
 MinimumOSVersion: 20H2
 
