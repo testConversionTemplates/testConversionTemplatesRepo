@@ -23,7 +23,7 @@ RemediationApproach:
 AdditionalComments:
   - Launch failed because java vm not found error pop-up on launch
 
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 
 MinimumOSVersion: 20H2
 
