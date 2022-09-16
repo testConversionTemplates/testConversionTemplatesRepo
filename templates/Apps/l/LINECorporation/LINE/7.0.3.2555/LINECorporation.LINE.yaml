@@ -30,7 +30,7 @@ RemediationApproach:
                 - Base: LINE/bin/
                   Patterns:
                   - .*
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 MinimumOSVersion: 21H2
 MinimumOSBuild: 19044.1288
 Architecture: 64
