@@ -71,7 +71,7 @@ RemediationApproach:
       Path: C:/Users/User/AppData/Local
     Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information
 MinimumPSFVersion: 1.0.200410.1
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 MinimumOSVersion: 20H2
 MinimumOSBuild: 19042.1237
 Architecture: 64
