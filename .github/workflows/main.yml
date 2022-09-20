@@ -10,9 +10,14 @@ on:
   pull_request:
     branches: [ "main" ]
 
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+defaults:
+ run:
+  working-directory: ./ISVDataValidation
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,9 +29,8 @@ jobs:
         node-version: 10.x
     - name: npm install
       run: |
-        cd ISVDataValidation
         npm install
     - name: npm run schema-validate
       run: |
-        node ISVDataValidation/validation/schema-validation/index.js ${{ env.loglevel }}
+        node validation/schema-validation/index.js ${{ env.loglevel }}
         # npm run schema-validate
