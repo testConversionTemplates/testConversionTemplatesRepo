@@ -47,7 +47,7 @@ RemediationApproach:
 
   - SequenceNumber: 3
     Issue:
-      Description: Test Issue 2
+      Description: Test Issue
     Fix:
       FixType: InstalledLocationVirtualization
       Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
@@ -73,7 +73,7 @@ RemediationApproach:
       Description: Required permissions were not granted to the VFS folder and launcher.exe was not available during msix launch
     Fix:
       FixType: InstallationPath
-      Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information
+      Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information 
       FixDetails:
         Path: C:/Users/User/AppData/Local
         

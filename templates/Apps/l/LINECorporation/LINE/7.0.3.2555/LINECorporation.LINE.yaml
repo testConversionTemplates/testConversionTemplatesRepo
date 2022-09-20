@@ -1,0 +1,79 @@
+# MSIX Conversion Accelerator
+# For updating refer to https://github.com/microsoft/MSIX-ConversionTemplates/blob/main/AUTHORING_TEMPLATES.md
+PackageName: LINE
+PublisherName: LINE Corporation
+PackageVersion: 7.0.3.2555
+EligibleForConversion: Yes
+ConversionStatus: Successful - Fix Required
+RemediationApproach:
+- SequenceNumber: 1
+  Issue:
+    Description: There were create file errors in process monitor
+  Fix:
+    FixType: PSF
+    FixDetails:
+      PSFConfig:
+        Applications:
+        - Id: LINELAUNCHER
+          Executable: LINE/bin/LineLauncher.exe
+          WorkingDirectory: LINE/bin/
+        Processes:
+        - Executable: LineLauncher
+          Fixups:
+          - Dll: FileRedirectionFixup.dll
+            Config:
+              RedirectedPaths:
+                PackageRelative:
+                - Base: LINE/Data/
+                  Patterns:
+                  - .*\.tst
+                - Base: LINE/bin/
+                  Patterns:
+                  - .*
+    Reference: https://github.com/Microsoft/MSIX-PackageSupportFramework/tree/master/fixups/FileRedirectionFixup
+- SequenceNumber: 2
+  Issue:
+    Description: Test Issue
+  Fix:
+    FixType: Capability
+    FixDetails:
+      Capabilities:
+      - allowElevation
+      - uiAccess
+    Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
+- SequenceNumber: 3
+  Issue:
+    Description: Test Issue 2
+  Fix:
+    FixType: InstalledLocationVirtualization
+    FixDetails:
+      UpdateActionsAttributes:
+        ModifiedItems: keep
+        DeletedItems: reset
+        AddedItems: keep
+    Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
+- SequenceNumber: 4
+  Issue:
+    Description: DLL not found
+  Fix:
+    FixType: LoaderSearchPathOverride
+    FixDetails:
+      FolderPaths:
+      - VFS\ProgramFilesX64\LINE\lib
+      - VFS\ProgramFilesX64\LINE\bin
+    Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-loadersearchpathoverride
+- SequenceNumber: 5
+  Issue:
+    Description: Required permissions were not granted to the VFS folder and launcher.exe was not available during msix launch
+  Fix:
+    FixType: InstallationPath
+    FixDetails:
+      Path: C:/Users/User/AppData/Local
+    Reference: https://docs.microsoft.com/en-us/windows/msix/packaging-tool/create-app-package#package-information
+MinimumPSFVersion: 1.0.200410.1
+Edition: Windows 10 Enterprise Evaluation Edition
+MinimumOSVersion: 20H2
+MinimumOSBuild: 19042.1237
+Architecture: 64
+MSIXConversionToolVersion: 1.2021.709.0
+TemplateVersion: 1.0.0

@@ -20,7 +20,7 @@ RemediationApproach:
           - installedLocationVirtualization
       Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
 
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 
 MinimumOSVersion: 20H2
 

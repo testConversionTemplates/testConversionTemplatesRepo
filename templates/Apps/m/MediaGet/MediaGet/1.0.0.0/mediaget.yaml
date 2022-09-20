@@ -22,7 +22,7 @@ RemediationApproach:
 AdditionalComments:
   - Ensure the installation Location is pointed to the right directory as specified in Install Location field in the reference page.
 
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 
 MinimumOSVersion: 20H2
 

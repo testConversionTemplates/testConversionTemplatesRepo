@@ -1,4 +1,4 @@
-# MSIX Conversion Template
+# MSIX Conversion Accelerator
 PackageName: Bittorrent
 
 PackageVersion: 7.10.5.46097
@@ -16,25 +16,26 @@ RemediationApproach:
     Fix:
       FixType: PSF
       FixDetails:
-        applications:
-          - id: BITTORRENT
-            executable: VFS\AppData\BitTorrent\BitTorrent.exe
-            workingDirectory: VFS\AppData\BitTorrent\
-        processes:
-          - executable: BitTorrent
-            fixups:
-              - dll: FileRedirectionFixup.dll
-                config:
-                  redirectedPaths:
-                    packageRelative:
-                      - base: VFS/AppData/BitTorrent/
-                        patterns:
-                          - .* 
+        PSFConfig:
+          applications:
+            - id: BITTORRENT
+              executable: VFS\AppData\BitTorrent\BitTorrent.exe
+              workingDirectory: VFS\AppData\BitTorrent\
+          processes:
+            - executable: BitTorrent
+              fixups:
+                - dll: FileRedirectionFixup.dll
+                  config:
+                    redirectedPaths:
+                      packageRelative:
+                        - base: VFS/AppData/BitTorrent/
+                          patterns:
+                            - .* 
       Reference: https://github.com/Microsoft/MSIX-PackageSupportFramework/tree/master/fixups/FileRedirectionFixup
 
 MinimumPSFVersion: 1.0.200410.1
 
-Edition: Windows 10 Enterprise Evaluation
+Edition: Windows 10 Enterprise Evaluation Edition
 
 MinimumOSVersion: 20H2
 
@@ -44,4 +45,4 @@ Architecture: 64
 
 MSIXConversionToolVersion: 1.2021.709.0
 
-TemplateVersion: 1.0.0
+AcceleratorVersion: 1.0.0
