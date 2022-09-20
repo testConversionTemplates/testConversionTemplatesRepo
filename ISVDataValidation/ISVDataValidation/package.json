@@ -1,0 +1,12 @@
+{
+  "name": "conversion-recipes",
+  "version": "1.0.0",
+  "description": "Contains conversion templates in yaml and yaml validator",
+  "scripts": {
+    "postinstall": "patch --forward --binary node_modules/yaml-schema-validator/lib/print_errors.js < patches/print_errors.patch",
+    "schema-validate": "node validation/schema-validation/index.js"
+  },
+  "dependencies": {
+    "yaml-schema-validator": "^1.2.3"
+  }
+}

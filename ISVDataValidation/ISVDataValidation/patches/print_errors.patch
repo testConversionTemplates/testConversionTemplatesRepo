@@ -1,0 +1,31 @@
+--- node_modules\yaml-schema-validator\lib\print_errors.js	1985-10-26 13:45:00.000000000 +05-30
++++ patches\print_errors.js	2021-11-17 23:03:07.000000000 +05-30
+@@ -1,21 +1,24 @@
+ const logger = require('./logger')
+ 
++var errorsAndWarningsCount = [0, 0];
+ const printErrors = (errors, warnings, logLevel = 3) => {
+   if(errors.length || warnings.length) {
+     if(logLevel > 2) {
+       logger.error('====== Schema Validation Error ======')
+       logger.error(`${errors.length} mismatches and ${warnings.length} warnings found.`)
+     }
+     if(logLevel) {
+-      errors.forEach((err, index) => logger.red(`${index + 1}. ${err.message}`))
++        errors.forEach((err, index) => logger.red(`ERROR: ${index + 1}. ${err.message}`))
+     }
+     if(logLevel > 1) {
+-      warnings.forEach((warn, index) => logger.yellow(`${index + 1}. ${warn.message}`))
+-    }
++      warnings.forEach((warn, index) => logger.yellow(`WARNING: ${index + 1}. ${warn.message}`))
++      }
++      errorsAndWarningsCount[0] += errors.length
++      errorsAndWarningsCount[1] += warnings.length
+   } else if(logLevel > 2) {
+     logger.success('Schema Validated Successfully')
+   }
+-  return errors.concat(warnings)
++    return errorsAndWarningsCount
+ }
+ 
+ module.exports = printErrors
