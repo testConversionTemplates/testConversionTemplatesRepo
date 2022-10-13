@@ -17,7 +17,7 @@ RemediationApproach:
       FixType: Capability
       FixDetails:
         Capabilities:
-          - AllowElevation
+          - allowElevation
       Reference: https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#:~:text=or%20Visual%20Studio.-,Elevation,-The%20allowElevation%20restricted
 
 Edition: Windows 10 Enterprise Evaluation Edition
