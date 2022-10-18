@@ -1,5 +1,4 @@
 # MSIX Conversion Accelerator
-# For updating refer to https://github.com/microsoft/MSIX-ConversionTemplates/blob/main/AUTHORING_TEMPLATES.md
 PackageName: Nexon Launcher
 
 PublisherName: Nexon
