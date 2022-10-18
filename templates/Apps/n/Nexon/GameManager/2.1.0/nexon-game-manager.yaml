@@ -1,9 +1,9 @@
-# MSIX Conversion Accelerator
+# MSIX Conversion Template
 PackageName: Nexon Launcher
 
-PublisherName: Nexon
-
 PackageVersion: 2.1.0
+
+PublisherName: Nexon
 
 EligibleForConversion: Yes
 
@@ -15,12 +15,12 @@ RemediationApproach:
       Description: App didnt have access to files in its working directory. 
     Fix:
       FixType: InstalledLocationVirtualization
-	Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
       FixDetails:
         UpdateActionsAttributes:
           ModifiedItems: keep
           DeletedItems: reset
           AddedItems: keep
+      Reference: https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap10-installedlocationvirtualization
 
 Edition: Windows 10 Enterprise for Virtual Desktops
 
@@ -30,6 +30,6 @@ MinimumOSBuild: 19042.2006
 
 Architecture: 64
 
-MSIXConversionToolVersion: 1.2022.1010.0
+MSIXConversionToolVersion: 1.2021.709.0
 
 TemplateVersion: 1.0.0
