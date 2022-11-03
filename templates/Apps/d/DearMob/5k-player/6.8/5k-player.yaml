@@ -17,6 +17,6 @@ MinimumOSBuild: 19042.6
 
 Architecture: 64
 
-MSIXConversionToolVersion: 1.2020.1219.0
+MSIXConversionToolVersion: 1.2020.1233.0
 
 TemplateVersion: 1.0.1
