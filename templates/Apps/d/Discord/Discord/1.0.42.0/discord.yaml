@@ -32,7 +32,7 @@ RemediationApproach:
                           - .*
       Reference: https://github.com/Microsoft/MSIX-PackageSupportFramework/tree/master/fixups/FileRedirectionFixup
 
-MinimumPSFVersion: 1.0.200410.1
+MinimumPSFVersion: 1.0.200410.111
 
 Edition: Windows 10 Enterprise Evaluation
 
