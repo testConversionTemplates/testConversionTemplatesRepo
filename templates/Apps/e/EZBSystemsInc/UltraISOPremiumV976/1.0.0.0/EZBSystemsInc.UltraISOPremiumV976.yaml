@@ -1,0 +1,18 @@
+# MSIX Conversion Accelerator
+# For updating refer to https://github.com/microsoft/MSIX-ConversionTemplates/blob/main/AUTHORING_TEMPLATES.md
+
+PackageName: UltraISO Premium V9.76
+
+PublisherName: EZB Systems, Inc.
+
+PackageVersion: 9.76
+
+EligibleForConversion: No - Driver Required
+ConversionStatus: Not Eligible
+Edition: Windows 10 Enterprise
+MinimumOSVersion: 20H2
+MinimumOSBuild: 19042.685
+Architecture: 64
+MSIXConversionToolVersion: 1.2021.1219.0
+AcceleratorVersion: 1.0.0
+
